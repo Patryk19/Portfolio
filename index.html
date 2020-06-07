@@ -1,87 +1,395 @@
 <!DOCTYPE HTML>
 
 <html lang="PL">
+
 <head>
-	<meta charset="utf-8"/>
-	
-	<title> Patryk J. Łączny - Portfolio </title>
-	
-	<meta name="description" content="Wizytówka przyszłego pracownika!" />
-	<meta name="keywords" content="portfolio" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	
-	<link rel="stylesheet" href="style.css" type="text/css" />
-	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
-	<link href="https://fonts.googleapis.com/css?family=Lato|Oswald&display=swap" rel="stylesheet">
-	
-	<script src="timer.js"> </script>
+
+    <meta charset="utf-8" />
+
+    <title> Patryk Łączny - Portfolio </title>
+
+    <meta name="description" content="Wizytówka przyszłego pracownika!" />
+    <meta name="keywords" content="portfolio,web-development" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <link rel="stylesheet" href="main.css" type="text/css" />
+
+    <link rel="stylesheet" href="css/fontello.css" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+
+    <a href='https://pl.freepik.com/darmowe-zdjecie-wektory/tlo'>Tło plik wektorowy utworzone przez freepik - pl.freepik.com</a>
 
 </head>
 
-<body onload="odliczanie();">
-	<br> </br>
-	<div id="container">
-	
-		<div class="rectangle"> 
-			<div id="logo"> <a href="index.html" class="tilelinkhtml5"> Patryk J. Łączny </a>
-		</div>
-			<div id="zegar"> 14:57:13 </div>
-			<div style="clear:both;"> </div>
-		</div>
-		
-		<div class="square">
-			<div class="tile1">
-				<a href="kim-jestem.html" class="tilelink"> <i class="icon-user"> </i> <br/> Kim jestem? </a>
-			</div>
-			<a href="oferta.html" class="tilelinkhtml5"> 
-				<div class="tile1"> 
-					<i class="icon-laptop"> </i> <br/> Co oferuję?	
-				</div> 
-			</a>
-			<div style="clear:both;"> </div>
-			
-			<div class="tile2"> 
-				<a href="cv.html" class="tilelink"> <i class="icon-graduation-cap"> </i> <br/> Curriculum Vitae </a>
-			</div>
-			<div class="tile3"> 
-				<a href="kontakt.html" class="tilelink"> <i class="icon-mail"> </i> <br/> Kontakt </a>
-			</div>
-			<div style="clear:both;"> </div>
-			
-			<div class="tile4"> 
-				<i> Tutaj będzie jakiś fajny cytat </i> <br/> ~ A tu będzie autor
-			</div>
-		</div>
-		
-		<div class="square">
-			<div class="tile5"> Witaj w moim portfolio! <br> <br/> 
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper eros lacus. Donec vestibulum, turpis non congue tincidunt, velit risus tristique erat, ut bibendum purus est ac libero. In vel neque ut lacus fringilla interdum nec eget dolor.
-			</div>
-			<div class="social1"> 
-				<a href="http://youtube.com" class="sociallink" target="_blank"> <i class="icon-youtube"> </i> </a> 
-			</div>
-			<div class="social2">
-				<a href="http://facebook.com" class="sociallink" target="_blank"> <i class="icon-facebook-official"> </i> </a>
-			</div>
-			<div class="social3">
-				<a href="http://google.pl" class="sociallink" target="_blank"> <i class="icon-gplus"> </i> </a>
-			</div>
-			<div class="social4"> 
-				<a href="http://linkedin.pl" class="sociallink" target="_blank"> <i class="icon-linkedin"> </i> </a>
-			</div>
-			<div style="clear: both;"> </div>
-		</div>
-		
-		<div style="clear: both;"> </div>
-		
-		<div class="rectangle"> 2020 &copy; Patryk J. Łączny - Portfolio. Wszelkie prawa zastrzeżone. <i class="icon-mail-alt"> </i>patryk.laczny7@gmail.com  </div>
-	
-	</div>	
+<body>
 
+    <header>
 
+        <div class="menu-toggler">
 
+            <div class="bar half start"></div>
+            <div class="bar"></div>
+            <div class="bar half end"></div>
 
+        </div>
+
+        <nav class="top-nav">
+
+            <ul class="nav-list">
+
+                <li>
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+
+                <li>
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+
+                <li>
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+
+                <li>
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+
+                <li>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <div class="landing-text">
+
+            <h1> Patryk Łączny</h1>
+            <h6>First steps in Front-End Development | Junior Web-Developer</h6>
+
+        </div>
+
+    </header>
+
+    <section class="about" id="about">
+
+        <div class="container">
+
+            <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
+
+                <img src="img/programming-pixabay.png" alt="profile" />
+
+            </div>
+
+            <div class="about-details">
+
+                <div class="about-heading">
+
+                    <h1>About</h1>
+                    <h6>Myself</h6>
+                </div>
+
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestias velit
+                    perspiciatis consectetur optio voluptate mollitia eius laborum. Assumenda voluptatibus provident
+                    eum, voluptates aut illum expedita? Soluta neque asperiores rem!
+                </p>
+
+                <div class="social-media">
+
+                    <ul class="nav-list">
+
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100004332662534" target="_blank" class="icom-link">
+                                <i class="icon-facebook-squared"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.linkedin.com/in/patryk-łączny-09a196189/" target="_blank" class="icom-link">
+                                <i class="icon-linkedin-squared"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://github.com/Patryk19" target="_blank" class="icom-link">
+                                <i class="icon-github-squared"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="services" id="services">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h1>Services</h1>
+                <h6>What I can do for you?</h6>
+
+            </div>
+
+            <div class="my-skills">
+
+                <div class="skill">
+
+                    <div class="icon-container">
+
+                        <i class="icon-brush"></i>
+
+                    </div>
+
+                    <h1>Web-Design</h1>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsa dolore animi a ex, vitae,
+                        vero voluptas error tempora laborum dignissimos corrupti sit
+                    </p>
+
+                </div>
+
+                <div class="skill">
+
+                    <div class="icon-container">
+
+                         <i class="icon-code"></i>
+
+                    </div>
+
+                    <h1>Web-Development</h1>
+
+                     <p>
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsa dolore animi a ex,
+                         vitae, vero voluptas error tempora laborum dignissimos corrupti sit
+                     </p>
+
+                </div>
+
+                <div class="skill">
+
+                    <div class="icon-container">
+
+                        <i class="icon-chart-bar"></i>
+
+                    </div>
+
+                    <h1>Product Startegy</h1>
+
+                    <p>
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut ipsa dolore animi a ex,
+                         vitae, vero voluptas error tempora laborum dignissimos corrupti sit
+                     </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="portfolio" id="portfolio">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h1>Portfolio</h1>
+                <h6>View some of my recent work</h6>
+
+            </div>
+
+            <div class="portfolio-item">
+
+                <div class="portfolio-img has-margin-right">
+
+                    <img src="img/computer-desk-electronics-keyboard-238118.jpg" alt="">
+
+                </div>
+
+                <div class="portfolio-description">
+
+                    <h6>Web Development</h6>
+                    <h1>Blog Websites</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corporis, ad saepe distinctio incidunt nobis sequi libero expedita dolores vitae consequatur dignissimos similique at. Laborum reiciendis voluptates aliquid eos exercitationem.
+                    </p>
+
+                    <a href="#" class="cta">View Details</a>
+                </div>
+
+            </div>
+
+            <div class="portfolio-item">
+
+                <div class="portfolio-description has-margin-right">
+
+                    <h6>Web Design</h6>
+                    <h1>Product Layout</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corporis, ad saepe distinctio incidunt nobis sequi libero expedita dolores vitae consequatur dignissimos similique at. Laborum reiciendis voluptates aliquid eos exercitationem.
+                    </p>
+
+                    <a href="#" class="cta">View Details</a>
+
+                </div>
+
+                <div class="portfolio-img">
+
+                    <img src="img/computer-desk-electronics-keyboard-238118.jpg" alt="">
+
+                </div>
+
+            </div>
+
+            <div class="portfolio-item">
+
+                <div class="portfolio-img has-margin-right">
+
+                    <img src="img/computer-desk-electronics-keyboard-238118.jpg" alt="">
+
+                </div>
+
+                <div class="portfolio-description">
+
+                    <h6>Web Design</h6>
+                    <h1>Product Sketch</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corporis, ad saepe distinctio incidunt nobis sequi libero expedita dolores vitae consequatur dignissimos similique at. Laborum reiciendis voluptates aliquid eos exercitationem.
+                    </p>
+
+                    <a href="#" class="cta">View Details</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="experience" id="experience">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h1>Work Experience</h1>
+                <h6>Past and current jobs </h6>
+
+            </div>
+
+            <div class="timeline">
+
+                <ul>
+
+                    <li class="date" data-date="2011 - Present">
+
+                        <h1>Praca nr 1</h1>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore qui necessitatibus illum
+                            nisi quasi temporibus ratione aut incidunt omnis cupiditate dolores laudantium nemo, soluta
+                            repudiandae autem voluptatibus illo. Officiis, nesciunt.
+                        </p>
+
+                    </li>
+
+                    <li class="date" data-date="2008 - 2011">
+
+                        <h1>Praca nr 2</h1>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore qui necessitatibus illum
+                            nisi quasi temporibus ratione aut incidunt omnis cupiditate dolores laudantium nemo, soluta
+                            repudiandae autem voluptatibus illo. Officiis, nesciunt.
+                        </p>
+
+                    </li>
+
+                    <li class="date" data-date="2002 - 2007">
+
+                        <h1>Praca nr 3</h1>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore qui necessitatibus illum
+                            nisi quasi temporibus ratione aut incidunt omnis cupiditate dolores laudantium nemo, soluta
+                            repudiandae autem voluptatibus illo. Officiis, nesciunt.
+                        </p>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <h1>Contact With Me!</h1>
+                <h6>Let's work together </h6>
+
+            </div>
+
+            <form action="">
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your E-Mail..." required>
+
+                <label for="service">Services</label>
+                <select name="services" id="service">
+                    <option value=""> Web Design</option>
+                    <option value=""> Web Development</option>
+                    <option value=""> Web Design/Development</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+                <input type="submit" value="Submit">
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer class="copyright">
+
+        <div class="up" id="up">
+
+            <i class="icon-up"></i>
+
+        </div>
+
+        <p>&copy; 2020 Patryk Łączny</p>
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"> </script>
 </body>
-
 
 </html>
