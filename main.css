@@ -278,15 +278,15 @@ li {
     transition: color 650ms;
 }
 
-.icon-facebook-squared:hover {
+.fa-facebook-square:hover {
     color: #4267b2;
 }
 
-.icon-linkedin-squared:hover {
+.fa-linkedin:hover {
     color: #0072b1;
 }
 
-.icon-github-squared:hover {
+.fa-github-square:hover {
     color: #AD5C51;
 }
 
