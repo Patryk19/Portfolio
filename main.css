@@ -21,6 +21,7 @@ body {
 
 section {
     padding: 6rem 0;
+    min-height: 100rem;
 }
 
 a {
