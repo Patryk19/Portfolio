@@ -21,7 +21,9 @@ body {
 
 section {
     padding: 6rem 0;
-    min-height: 100rem;
+    min-height: 100vh;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 a {
@@ -32,6 +34,7 @@ a {
 p {
     font-size: 1.8rem;
     font-weight: 300;
+    text-align: justify;
 }
 
 img {
@@ -52,6 +55,8 @@ img {
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .section-heading {
@@ -206,7 +211,6 @@ li {
 .landing-text {
     position: absolute;
     top: 50%;
-    /* left: 50%; */
     transform: translate(-50% -50%);
     width: 100%;
     text-align: center;
@@ -248,7 +252,7 @@ li {
     text-align: center;
     text-transform: uppercase;
     line-height: 0;
-    margin-bottom: 6rem;
+    margin-bottom: 15rem;
 }
 
 .about-heading h1 {
@@ -261,9 +265,20 @@ li {
     font-weight: 300;
 }
 
+.about-details p {
+    margin-top: 5rem;
+}
+
 .profile-img {
     flex: 1;
-    margin-right: 5rem;
+    text-align: center;
+}
+
+.profile-img img {
+    height: 60rem;
+    width: 41rem;
+    text-align: center;
+    border-radius: 5rem;
 }
 
 .about-details {
@@ -292,6 +307,29 @@ li {
 }
 
 
+/* My skills icons */
+
+.icon-container .fa-html5 {
+    color: rgb(209, 44, 44);
+    font-size: 7rem;
+}
+
+.icon-container .fa-css3-alt {
+    color: rgb(0, 80, 199);
+    font-size: 7rem;
+}
+
+.icon-container .fa-js-square {
+    color: rgb(229, 233, 1);
+    font-size: 7rem;
+}
+
+.icon-container .fa-git-alt {
+    color: #b30000;
+    font-size: 7rem;
+}
+
+
 /* End About */
 
 
@@ -300,8 +338,8 @@ li {
 .my-skills {
     margin-top: 10rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    grid-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-gap: 5rem;
     text-align: center;
 }
 
@@ -311,6 +349,20 @@ li {
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    max-height: 300px;
+}
+
+.skill p {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.skill img {
+    height: 10rem;
+    width: 15rem;
+    margin-bottom: 5rem;
+    border: solid .5rem rgb(192, 187, 255);
+    border-radius: 10px;
 }
 
 .skill h1 {
@@ -324,7 +376,7 @@ li {
     width: 10rem;
     height: 10rem;
     border: 3px solid #eee;
-    background-color: #24247a;
+    background-color: #5d9eff;
     margin-bottom: 5rem;
     display: flex;
     transform: rotate(45deg);
@@ -520,6 +572,7 @@ input[type="submit"]:hover {
     border-radius: 100%;
     display: flex;
     animation: pulse 2s infinite;
+    cursor: pointer;
 }
 
 .up i {
@@ -530,6 +583,7 @@ input[type="submit"]:hover {
 
 .copyright p {
     font-size: 1.4rem;
+    text-align: center;
 }
 
 
